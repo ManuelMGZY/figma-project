@@ -2,19 +2,29 @@ body {
     background-color: #FFF7F0;
     color: #030303;
     font-family: "Plus Jakarta Sans", sans-serif;
-  
     margin: 0;
     padding: 0;
+  }
+
   
+  @media (width < 375px) {
+    html, body {
+      overflow-x: hidden;
+    }
   }
   
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-  
     padding: 20px 40px;
   }
+
+  @media (width < 375px) {
+    nav {
+      padding: 20px 16px; 
+    }
+}  
   
   #logo img {
     width: 64px;
@@ -29,6 +39,24 @@ body {
     border-radius: 1000px;
     font-weight: bold;
   }
+
+
+  @media (width < 375px) {
+    #logo img {
+      width: 48px;
+      aspect-ratio: 1;
+    }
+    #call-to-action {
+      background-color: #030303;
+      
+      color: #FFF7F0;
+      text-decoration: none;
+      padding: 8px 27px;
+      border-radius: 100vw;
+      font-weight: bold;
+    }
+        
+    }
   
   .text-content {
     text-align: center;
@@ -36,7 +64,7 @@ body {
   }
   
   h1 {
-    font-size: 56px;
+    font-size: 3.5rem;
     margin-block-end: 22px;
   }
   
@@ -54,6 +82,16 @@ body {
     max-width: 1200px;
   }
   
+
+  @media (width < 375px) {
+    .image-container {
+     display: flex;
+    flex-direction: column;
+  
+    gap: 24px; /* Separación entre los elementos */
+    padding: 0 16px; /* Espacio de 16px a los lados */
+    }
+ }
   .image-container a {
     aspect-ratio: 4 / 5;
   
@@ -85,10 +123,17 @@ body {
   }
   
   .square{
-    width: 354px;
+    width: 26.3rem;
     
   }
-  
+
+  @media (width < 375px) {
+      .square{
+      width: 18.94rem;
+      height: 22.75rem;
+      
+    }
+  }
   .purple {
     background-color: #755CDE;
   }
@@ -102,31 +147,41 @@ body {
   }
   
   .img-purple{
-    width: 128px;
+    width: 8rem;
   }
   .img-orange{
-    width: 229.75px;
+    width: 14.359375rem;
   }
   .img-green{
-    height: 216.65px !important;
-    width: 86.66px;
+    height: 13.540625rem !important;
+    width: 5.41625rem; 
   }
   
   .card{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
-    margin: 40px auto;
-    width: 1110px;
+    gap: 1.875rem;
+    margin: 2.5rem auto;
+    width: 69.375rem;
   }
+
+  @media (width < 375px) {
+    .card {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 21.4375rem; 
+    }
+    }
+ 
   
   h2{
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   
   p{
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   
   .button{
@@ -138,8 +193,19 @@ body {
     width: 445px;
   }
   
+  @media (width < 375px) {
+    .card img{
+      width: 18.75rem;
+    }
+ }
+
   .text-button{
-    margin-bottom: 32px;
-    margin-top: 34px;
+    margin-bottom: 2rem;
+    margin-top: 2.125rem;
   }
-  
+
+  @media (width < 375px) {
+    section{ 
+        
+    }
+ }
